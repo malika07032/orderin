@@ -1,0 +1,21 @@
+.btn {
+    border-radius: 120px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    padding: 1rem;
+
+    &:hover{
+        background-color: var(--color-primary-orange);
+        color: var(--color-white) !important;
+    }
+}
+
+.orange, .active {
+    background-color: var(--color-primary-orange);
+    color: var(--color-white) !important;   
+}
+
+.black {
+    background-color: var(--color-black);
+    color: var(--color-white) !important;
+}

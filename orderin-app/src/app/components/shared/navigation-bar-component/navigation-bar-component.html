@@ -1,0 +1,12 @@
+<mat-toolbar class="nav-bar">
+    <img class="logo" src="assets/images/LOGO1.png" alt="Company Logo">
+
+    <div class="nav-buttons">
+        <app-button-component text="Home" (clicked)="navigate(this.appRoutes.HOME)" [isActive]="isHomeActive()"/>
+        <app-button-component text="Browse Menu" />
+        <app-button-component text="Special Offers" />
+        <app-button-component text="Restaurants" (clicked)="navigate(this.appRoutes.RESTAURANTS)" [isActive]="isRestaurantActive()"/>
+        <app-button-component text="Track Order" />
+        <app-button-component text="Login/Signup" icon="account_circle" [colorType]="colorTypes.BLACK" />
+    </div>
+</mat-toolbar>
