@@ -8,4 +8,12 @@
             <div class="heading-color">Fast and Fresh</div>
         </div>
     </div>
+
+    <div>
+        <app-category-card-component #cardComponentRef/>
+
+        @if (categoryCardComponentInstance()?.cardTemplate(); as templateRef) {
+            <app-carousel-section-component sectionTitle="Popular Categories" [items]="items" [customItemTemplate]="templateRef"/>
+        }
+    </div>
 </div>

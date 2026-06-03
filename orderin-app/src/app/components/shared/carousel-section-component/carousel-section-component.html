@@ -1,0 +1,12 @@
+<div class="carousel-container">
+    <div class="section-title">{{sectionTitle()}}</div>
+
+    @for (item of items(); track item.title) {
+        <ng-container  *ngTemplateOutlet="customItemTemplate(); context: item" />
+    }
+</div>
+
+<ng-template #template let-image="image" let-text="title">
+    <span>{{image}}</span>
+    <span>{{text}}</span>
+</ng-template>
