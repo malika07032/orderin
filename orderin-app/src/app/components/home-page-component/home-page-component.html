@@ -9,11 +9,11 @@
         </div>
     </div>
 
-    <div>
+    <div class="popular-categories-section">
         <app-category-card-component #cardComponentRef/>
 
         @if (categoryCardComponentInstance()?.cardTemplate(); as templateRef) {
-            <app-carousel-section-component sectionTitle="Popular Categories" [items]="items" [customItemTemplate]="templateRef"/>
+            <app-carousel-section-component sectionTitle="Popular Categories" [items]="popularCategories()" [customItemTemplate]="templateRef"/>
         }
     </div>
 </div>

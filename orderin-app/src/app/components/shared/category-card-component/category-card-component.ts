@@ -1,4 +1,4 @@
-import { Component, input, TemplateRef, viewChild } from '@angular/core';
+import { Component, TemplateRef, viewChild } from '@angular/core';
 
 @Component({
   selector: 'app-category-card-component',
@@ -7,8 +7,5 @@ import { Component, input, TemplateRef, viewChild } from '@angular/core';
   styleUrl: './category-card-component.scss',
 })
 export class CategoryCardComponent {
-  //readonly url = input.required<string>();
-  //readonly text = input.required<string>();
-
   readonly cardTemplate = viewChild<TemplateRef<any>>('cardTemplate');
 }

@@ -1,12 +1,6 @@
 import { NgTemplateOutlet } from '@angular/common';
 import { Component, input, TemplateRef } from '@angular/core';
 
-export interface ICarouselItem {
-  title: string,
-  image: string,
-  text?: string
-}
-
 @Component({
   selector: 'app-carousel-section-component',
   imports: [
@@ -17,7 +11,6 @@ export interface ICarouselItem {
 })
 export class CarouselSectionComponent {
   readonly sectionTitle = input.required<string>();
-  readonly items = input.required<ICarouselItem[]>();
-
+  readonly items = input.required<any[]>();
   readonly customItemTemplate = input.required<TemplateRef<any>>();
 }
