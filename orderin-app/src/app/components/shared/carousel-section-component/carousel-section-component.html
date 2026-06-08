@@ -2,7 +2,7 @@
     <div class="section-title">{{sectionTitle()}}</div>
 
     <div class="section-content">
-        @for (item of items(); track item.title) {
+        @for (item of items(); track item) {
             <ng-container  *ngTemplateOutlet="customItemTemplate(); context: item" />
         }
     </div>
